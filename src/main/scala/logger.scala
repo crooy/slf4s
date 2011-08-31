@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.weiglewilczek.slf4s
+package com.weiglewilczek.slf4s{
 
 import org.slf4j.{ Logger => Slf4jLogger, LoggerFactory }
 import org.slf4j.spi.{ LocationAwareLogger => Slf4jLocationAwareLogger }
@@ -224,4 +224,5 @@ private[slf4s] object DefaultLocationAwareLogger {
 private[slf4s] final class DefaultLocationAwareLogger(override protected val slf4jLogger: Slf4jLocationAwareLogger)
     extends LocationAwareLogger {
   override protected val wrapperClassName = DefaultLocationAwareLogger.WrapperClassName
+}
 }
